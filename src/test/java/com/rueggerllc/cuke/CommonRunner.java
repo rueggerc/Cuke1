@@ -6,7 +6,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
-public class CucumberTests {
-
+@CucumberOptions(
+		features="src/test/resources/features",
+		glue="com.rueggerllc.cuke.steps"
+)
+public class CommonRunner {
 }
