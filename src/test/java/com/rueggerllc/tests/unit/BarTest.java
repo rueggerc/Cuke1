@@ -4,8 +4,9 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
+
+import com.rueggerllc.cuke.Bar;
 
 public class BarTest {
 	
@@ -27,8 +28,9 @@ public class BarTest {
 
 	@Test
 	// @Ignore
-	public void testDummy() {
-		System.out.println("Bar Dummy Test");
+	public void testBar() {
+		Bar bar = new Bar();
+		bar.doIt(33);
 	}
 
 }

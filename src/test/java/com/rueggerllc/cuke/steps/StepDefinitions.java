@@ -71,34 +71,34 @@ public class StepDefinitions {
 	    throw new PendingException();
 	}
 	
-	@Given("a member provided an access number {int}")
-	public void a_member_provided_an_access_number(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("an application is submitted")
-	public void an_application_is_submitted() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Then("the application details should be saved for future use")
-	public void the_application_details_should_be_saved_for_future_use() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("a card number is requested by providing the member access number from TSYS API")
-	public void a_card_number_is_requested_by_providing_the_member_access_number_from_TSYS_API() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Then("TSYS API should return a card number")
-	public void tsys_API_should_return_a_card_number() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+//	@Given("a member provided an access number {int}")
+//	public void a_member_provided_an_access_number(Integer int1) {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@When("an application is submitted")
+//	public void an_application_is_submitted() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@Then("the application details should be saved for future use")
+//	public void the_application_details_should_be_saved_for_future_use() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@When("a card number is requested by providing the member access number from TSYS API")
+//	public void a_card_number_is_requested_by_providing_the_member_access_number_from_TSYS_API() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@Then("TSYS API should return a card number")
+//	public void tsys_API_should_return_a_card_number() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
 
 }

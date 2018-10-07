@@ -16,8 +16,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
 		dryRun=false,
 		// tags={"@card or @belly or @login or @controller"},
 		// tags={"@belly or @login"},
-		// tags={"@card"},
-		tags={"@controller"},
+		tags={"@card"},
+		// tags={"@controller"},
 		glue="com.rueggerllc.cuke.steps",
 		features="src/test/resources/features",
 		plugin= {

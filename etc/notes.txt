@@ -1,0 +1,80 @@
+Built-in build lifecycles
+=========================
+default		project deployment
+clean		cleaning
+site		Documentation
+
+
+default lifecyle Phases
+=======================
+validate
+compile
+test
+package
+verify
+install
+deploy
+
+#validate
+initialize
+generate-sources
+process-sources
+generate-resources
+process-resources
+#compile
+process-classes
+generate-test-sources
+process-test-sources
+generate-test-resources
+process-test-resources
+test-compile
+process-test-classes
+#test
+prepare-package
+#package
+pre-integration-test
+integration-test
+post-integration-test
+#verify
+#install
+#deploy
+
+clean phases
+=============
+pre-clean
+clean
+post-clean
+
+site phases
+============
+pre-site
+site
+post-site
+site-deploy
+
+
+
+Phases not called directly from command line (produce intermediate results) 
+===========================================================================
+pre-*
+post-*
+process-*
+
+Examples:
+process-resources
+process-test-resources
+pre-integration-test
+
+
+
+clean lifecyle Phases
+=====================
+
+site lifecyle Phases
+=====================
+
+Phases are made up of Goals
+============================
+
+
+Assigning Goals to a Phase
