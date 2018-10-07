@@ -1,14 +1,62 @@
 package com.rueggerllc.cuke;
 
-import org.junit.runner.RunWith;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+import cucumber.api.testng.CucumberFeatureWrapper;
+import cucumber.api.testng.PickleEventWrapper;
+import cucumber.api.testng.TestNGCucumberRunner;
 
-@RunWith(Cucumber.class)
 @CucumberOptions(
+		strict=true,
+		dryRun=false,
+		// tags={"@card or @belly or @login or @controller"},
+		// tags={"@belly or @login"},
+		// tags={"@card"},
+		tags={"@controller"},
+		glue="com.rueggerllc.cuke.steps",
 		features="src/test/resources/features",
-		glue="com.rueggerllc.cuke.steps"
+		plugin= {
+          // "pretty"
+		  "html:target/cucumber-reports/cucumber-pretty",
+          "testng:target/cuke/TEST-cucumber-testng.xml",
+          "json:target/cuke/cucumber.json"
+        }
 )
-public class CommonRunner {
+
+// Execution priority: TestNG’s @BeforeClass → Cucumber’s @Before → 
+// Cucumber Background → Cucumber Scenario → Cucumber’s @After → TestNG’s @AfterClass
+
+@Test
+public class CommonRunner extends AbstractTestNGCucumberTests {
 }
+
+//public class CommonRunner  {
+//
+//    private TestNGCucumberRunner testNGCucumberRunner;
+//    
+//    @BeforeClass(alwaysRun=true)
+//    public void setUpClass() throws Exception {
+//        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+//    }
+//    
+//    @Test(groups="cucumber", description="Runs Cucumber Scenarios", dataProvider="scenarios")
+//    public void scenario(PickleEventWrapper pickleEvent, CucumberFeatureWrapper cucumberFeature) throws Throwable {
+//    	testNGCucumberRunner.runScenario(pickleEvent.getPickleEvent());
+//    }
+// 
+//    @DataProvider
+//    public Object[][] scenarios() {
+//    	return testNGCucumberRunner.provideScenarios();
+//    }
+// 
+//    @AfterClass(alwaysRun = true)
+//    public void tearDownClass() throws Exception {
+//        testNGCucumberRunner.finish();
+//    }
+//    
+//}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">User wants to dispute a certain transactions (PENDING : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">User Clicks on Submit (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Transaction Data is POSTed Controller (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Transaction Data is Inserted Into Database (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1235" started-at="2018-10-07T00:31:40Z" finished-at="2018-10-07T00:31:41Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.rueggerllc.cuke.CommonRunner@64bfbc86]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="1235" started-at="2018-10-07T00:31:40Z" finished-at="2018-10-07T00:31:41Z">
+      <class name="com.rueggerllc.cuke.CommonRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.rueggerllc.cuke.CommonRunner@64bfbc86]" name="setUpClass" is-config="true" duration-ms="694" started-at="2018-10-07T00:31:40Z" finished-at="2018-10-07T00:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.rueggerllc.cuke.CommonRunner@64bfbc86]" name="runScenario" duration-ms="52" started-at="2018-10-07T00:31:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-10-07T00:31:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Insert Transaction Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CRUD Controller"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.api.PendingException">
+            <message>
+              <![CDATA[TODO: implement me]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.api.PendingException: TODO: implement me
+at com.rueggerllc.cuke.steps.ControllerSteps.user_wants_to_dispute_a_certain_transactions(ControllerSteps.java:13)
+at ✽.User wants to dispute a certain transactions(src/test/resources/features/controller.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.api.PendingException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">User wants to dispute a certain transactions (PENDING : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">User Clicks on Submit (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Transaction Data is POSTed Controller (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Transaction Data is Inserted Into Database (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.rueggerllc.cuke.CommonRunner@64bfbc86]" name="tearDownClass" is-config="true" duration-ms="137" started-at="2018-10-07T00:31:41Z" finished-at="2018-10-07T00:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.rueggerllc.cuke.CommonRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
