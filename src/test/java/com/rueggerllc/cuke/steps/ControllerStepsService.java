@@ -1,8 +1,9 @@
 package com.rueggerllc.cuke.steps;
 
-import org.springframework.boot.test.context.TestComponent;
+import org.springframework.stereotype.Service;
 
-@TestComponent
+// @TestComponent
+@Service
 public class ControllerStepsService {
 	
 	public void doInsert() {

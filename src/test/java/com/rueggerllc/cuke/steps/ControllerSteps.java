@@ -7,8 +7,12 @@ import cucumber.api.java.en.When;
 
 public class ControllerSteps {
 	
-	@Autowired
 	private ControllerStepsService service;
+	
+	@Autowired
+	public ControllerSteps(ControllerStepsService service) {
+		this.service = service;
+	}
 
 	@When("User Has Data to Insert")
 	public void user_Has_Data_to_Insert() {
