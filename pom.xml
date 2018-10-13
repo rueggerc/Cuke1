@@ -61,6 +61,18 @@
           <artifactId>cucumber-testng</artifactId>
           <version>3.0.2</version>
         </dependency>
+        
+		<dependency>
+          <groupId>io.cucumber</groupId>
+          <artifactId>cucumber-junit</artifactId>
+          <version>3.0.2</version>
+        </dependency>
+        
+		<dependency>
+          <groupId>io.cucumber</groupId>
+          <artifactId>cucumber-spring</artifactId>
+          <version>3.0.2</version>
+        </dependency>
 		
 		
 	</dependencies>
@@ -87,7 +99,7 @@
   				<configuration>
   					<argLine>${failsafeArgLine}</argLine>
   					<suiteXmlFiles>
-  						<suitXmlFile>src/test/resources/testng/cuke-testng.xml</suitXmlFile>
+  						<suitXmlFile>src/test/resources/testng/int-testng.xml</suitXmlFile>
   					</suiteXmlFiles>
   				</configuration>
   			</plugin>

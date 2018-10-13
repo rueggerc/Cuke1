@@ -1,4 +1,4 @@
-package com.rueggerllc.cuke;
+package com.rueggerllc.cuke.service;
 
 public class Bar {
 

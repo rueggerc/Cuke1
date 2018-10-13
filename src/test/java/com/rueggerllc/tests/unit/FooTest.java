@@ -2,9 +2,10 @@ package com.rueggerllc.tests.unit;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.Assert;
 
-import com.rueggerllc.cuke.Foo;
+import com.rueggerllc.cuke.service.Foo;
+
+import org.testng.Assert;
 
 public class FooTest {
 	
